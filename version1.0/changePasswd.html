@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>修改密码</title>
+</head>
+
+<body>
+	<form action="php/changePasswd.php" method="post">
+		id:
+		<input type="number" name="id">
+		<br>
+		old password:
+		<input type="password" name="OldPasswd">
+		<br>
+		new password:
+		<input type="password" name="NewPasswd">
+		<br>
+		repeat it:
+		<input type="password" name="NewRepPasswd">
+		<br>
+		<input type="radio" name="kind" value="student" checked>学生
+		<br>
+		<input type="radio" name="kind" value="teacher">老师
+		<br>
+		<input type="submit" value="确定">
+		<br>
+		<input type="button" value="返回主页" onClick="location='index.html' ">
+	</form>
+</body>
+</html>
